@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *,*::before,*::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        background: linear-gradient(to right,#7f53ac,#657ced);
+    }
+    .container{
+        position: absolute;
+        width: 40%;
+        min-width: 580px;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        background: white;
+        padding: 50px 10px;
+        border-radius: 5px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+
+    }
+    h3{
+        font-size:20px;
+        font-weight: 600px;
+        text-align: center;
+
+    }
+    input[type="text"]{
+        width: 90px;
+        font-weight: 600;
+        color: #663399;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 30px;
+        margin-left:140px;
+        border-radius: 5px;
+        border: 2px solid  #202020;
+        font-size: 28px;
+    }
+    button{
+        width: 130px;
+        padding: 15px 0;
+        border-radius: 5px;
+        background: #663399;
+        color: white;
+        border: none;
+        font-size: 18px;
+        margin-left:120px;
+        font-weight: 600;
+        margin-bottom: 20px;
+
+    }
+
+    p{
+        text-align: center;
+        font-size: 18px;
+            }
+
+
+</style>
+<body>
+    <div class="container">
+        <h3>I am thinking of a number between 1-100.</h3>
+        <h3>can you guess it?</h3>
+        <input type="text" placeholder="Num" id="guess"><br>
+        <button onclick="play()" id="my_btn">GUESS</button>
+        <p id="message1">No. of guesses: 0</p>
+        <p id="message2">Guessed numbers are: none</p>
+        <p id="message3"></p>
+    </div>
+    
+
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
